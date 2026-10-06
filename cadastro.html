@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Conta - CineFlix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo"><a href="index.html" style="color: #ff000d;">CineFlix</a></div>
+    </header>
+
+    <div class="auth-wrapper">
+        <div class="auth-box">
+            <h2>Criar Conta</h2>
+            <form action="#">
+                <div class="input-group">
+                    <input type="text" placeholder="Nome Completo" required>
+                </div>
+                <div class="input-group">
+                    <input type="email" placeholder="Endereço de email" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" placeholder="Crie uma senha" minlength="6" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" placeholder="Confirme sua senha" minlength="6" required>
+                </div>
+             <button class="btn-primary" onclick="window.location.href='index.html'">Cadastrar</button>
+            </form>
+            <div class="auth-footer">
+                Já tem uma conta? <a href="login.html">Entrar.</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

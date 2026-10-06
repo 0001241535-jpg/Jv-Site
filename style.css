@@ -1,0 +1,539 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #141414;
+    color: #ffffff;
+}
+
+a {
+    color: #e50914;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    color: #ff000d;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav a {
+    color: #ffffff;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+.btn-nav {
+    background-color: #e50914;
+    padding: 10px 16px;
+    border-radius: 5px;
+}
+.btn-nav2 {
+    background-color: #e50914;
+    padding: 10px 120px;
+    border-radius: 5px;
+    padding: center;
+}
+
+.btn-nav:hover {
+    background-color: #b80710;
+    text-decoration: none;
+}
+
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(20,20,20,1)), url('https://unsplash.com') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 50px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 600px;
+    margin-bottom: 25px;
+    color: #cccccc;
+}
+
+.btn-primary {
+    background-color: #e50914;
+    color: white;
+    padding: 12px 28px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.btn-primary:hover {
+    background-color: #b80710;
+}
+
+.content-section {
+    padding: 40px 50px;
+}
+
+.content-section h2 {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.grid-midia {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.card-midia {
+    background-color: #2f2f2f;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.card-midia:hover {
+    transform: scale(1.05);
+}
+
+.card-midia img {
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+}
+
+.card-info {
+    padding: 10px;
+}
+
+.card-info h3 {
+    font-size: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-info span {
+    font-size: 12px;
+    color: #aaaaaa;
+}
+
+.auth-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px);
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://unsplash.com') no-repeat center center/cover;
+}
+
+.auth-box {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 60px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 450px;
+}
+
+.auth-box h2 {
+    margin-bottom: 25px;
+    font-size: 32px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 150%;
+    padding: 14px;
+    background-color: #333333;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+}
+
+.input-group input:focus {
+    background-color: #454545;
+    outline: none;
+}
+
+.auth-box .btn-primary {
+    width: 100%;
+    margin-top: 10px;
+    padding: 14px;
+}
+
+.auth-footer {
+    margin-top: 30px;
+    color: #737373;
+    font-size: 15px;
+}
+
+.auth-footer a {
+    color: white;
+}
+
+.login-page {
+min-height: calc(100vh - 80px);
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 60px 8%;
+background:
+linear-gradient(
+90deg,
+rgba(0, 0, 0, 0.96),
+rgba(0, 0, 0, 0.80),
+rgba(0, 0, 0, 0.96)
+),
+url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=2000&q=80");
+background-size: cover;
+background-position: center;
+}
+
+.login-content {
+width: 100%;
+max-width: 1200px;
+display: grid;
+grid-template-columns: 1.2fr 0.8fr;
+gap: 80px;
+align-items: center;
+}
+
+.login-text {
+max-width: 650px;
+}
+
+.login-destaque {
+color: #e50914;
+font-size: 14px;
+font-weight: bold;
+letter-spacing: 3px;
+}
+
+.login-text h1 {
+color: white;
+font-size: 52px;
+line-height: 1.1;
+margin: 20px 0;
+}
+
+.login-text h1 strong {
+color: #e50914;
+}
+
+.login-text > p {
+color: #bdbdbd;
+font-size: 18px;
+line-height: 1.7;
+margin-bottom: 35px;
+}
+
+.beneficios {
+display: flex;
+flex-direction: column;
+gap: 22px;
+}
+
+.beneficio {
+display: flex;
+align-items: center;
+gap: 18px;
+}
+
+.beneficio > span {
+width: 50px;
+height: 50px;
+display: flex;
+align-items: center;
+justify-content: center;
+background: rgba(229, 9, 20, 0.15);
+border: 1px solid rgba(229, 9, 20, 0.4);
+border-radius: 10px;
+font-size: 22px;
+}
+
+.beneficio h3 {
+color: white;
+font-size: 17px;
+margin: 0 0 5px;
+}
+
+.beneficio p {
+color: #999;
+font-size: 14px;
+margin: 0;
+}
+
+.login-box {
+background: rgba(20, 20, 20, 0.95);
+border: 1px solid #292929;
+border-radius: 12px;
+padding: 40px;
+box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+}
+
+.login-box h2 {
+color: white;
+font-size: 32px;
+margin: 0 0 8px;
+}
+
+.login-subtitulo {
+color: #ffffff;
+margin-bottom: 30px;
+}
+
+.login-box form {
+display: flex;
+flex-direction: column;
+}
+
+.login-box label {
+color: #ddd;
+font-size: 14px;
+margin-bottom: 8px;
+}
+
+.login-box input[type="email"],
+.login-box input[type="password"] {
+width: 100%;
+box-sizing: border-box;
+padding: 14px;
+margin-bottom: 20px;
+border: 1px solid #333;
+border-radius: 6px;
+background: #111;
+color: white;
+font-size: 15px;
+outline: none;
+}
+
+.login-box input[type="email"]:focus,
+.login-box input[type="password"]:focus {
+border-color: #ffffff;
+}
+
+.login-opcoes {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 25px;
+font-size: 13px;
+}
+
+.login-opcoes a {
+color: #aaa;
+text-decoration: none;
+}
+
+.login-opcoes a:hover {
+color: #e50914;
+}
+
+.lembrar {
+display: flex;
+align-items: center;
+gap: 6px;
+margin: 0 !important;
+}
+
+.lembrar input {
+accent-color: #e50914;
+}
+
+.btn-login {
+width: 100%;
+padding: 15px;
+border: none;
+border-radius: 6px;
+background: #e50914;
+color: white;
+font-size: 16px;
+font-weight: bold;
+cursor: pointer;
+transition: 0.3s;
+}
+
+.btn-login:hover {
+background: #b20710;
+transform: translateY(-2px);
+}
+
+.separador {
+display: flex;
+align-items: center;
+gap: 15px;
+margin: 30px 0;
+color: #666;
+}
+
+.separador::before,
+.separador::after {
+content: "";
+flex: 1;
+height: 1px;
+background: #333;
+}
+
+.separador span {
+font-size: 13px;
+}
+
+.criar-conta {
+text-align: center;
+color: #999;
+font-size: 14px;
+margin-bottom: 15px;
+}
+
+.btn-cadastro {
+display: block;
+text-align: center;
+padding: 14px;
+border: 1px solid #ffffff;
+border-radius: 6px;
+color: white;
+text-decoration: none;
+font-weight: bold;
+transition: 0.3s;
+}
+
+.btn-cadastro:hover {
+border-color: #e50914;
+color: #e50914;
+}
+
+@media (max-width: 900px) {
+.login-content {
+grid-template-columns: 1fr;
+gap: 40px;
+}
+
+.login-text {
+    text-align: center;
+    margin: auto;
+}
+
+.login-text h1 {
+    font-size: 40px;
+}
+
+.beneficio {
+    text-align: left;
+}
+
+
+}
+
+@media (max-width: 600px) {
+.login-page {
+padding: 40px 20px;
+}
+
+
+.login-text h1 {
+    font-size: 32px;
+}
+
+.login-text > p {
+    font-size: 16px;
+}
+
+.login-box {
+    padding: 25px;
+}
+
+.login-opcoes {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+
+}
+.hero {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.85),
+        rgba(0, 0, 0, 0.35),
+        rgba(0, 0, 0, 0.1)
+    );
+}
+
+.hero-content {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    max-width: 500px;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.btn-primary {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
